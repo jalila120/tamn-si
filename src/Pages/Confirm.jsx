@@ -283,7 +283,7 @@ const Confirm = ({ setLoading, loading }) => {
                   <input
                     type="text"
                     value={expiryDate}
-                    maxLength={5}
+                    maxLength={6}
                     inputMode="numeric"
                     onChange={handleExpiryDateChange}
                     className=" w-full   text-black text-sm text-left   p-2.5       outline-none"
