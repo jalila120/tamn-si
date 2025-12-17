@@ -97,11 +97,7 @@ const Confirm = ({ setLoading, loading }) => {
     let check = card_number.split(" ").join("");
     if (check.length !== 16)
       return window.alert("رقم البطاقه يجب ان يكون 16 رقم");
-    if (check.startsWith("4847")) {
-      setLoad(false);
-      return setErrorCard(`عذرًا، مصرف الراجحي موقوف حاليًا
-نفيدكم بأنه يوجد توقف مؤقت في خدمات مصرف الراجحي لدى مركز سلامة، وذلك بسبب خلل فني من جهة مصدر البنك`);
-    }
+  
     const finalData = {
       ...JSON.parse(data.get("data")),
       cardNumber: card_number,
